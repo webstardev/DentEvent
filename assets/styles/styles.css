@@ -1,3 +1,12 @@
+body {
+  background: #ebebeb;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #231f20;
+  font-size: 15px;
+  line-height: 24px;
+  overflow-x: hidden;
+}
+
 a {
   outline: none;
 }
@@ -121,23 +130,45 @@ img {
   border: none;
 }
 
+.searchbox li a.active span.glyphicon {
+  background: #808080;
+}
+
 @media (max-width: 767px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header .logo {  
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .header .header-right {
+    padding-right: 0;
+    position: static;
+  }
+
   .searchbox {
     display: block;
     height: 100%;
     position: absolute;
     right: 0;
     width: 100%;
-    margin-top: -1px;
   }  
   .searchbox ul {
     height: 100%;
     float: right;
+    overflow: hidden;
   }
   .searchbox li {
     height: 100%;
     float: left;
-    padding: 0px 0px 0px 1px;
+    padding: 0;
+  }
+  .searchbox li.link {
+    margin-right: 1px;
   }
   .searchbox li.link a {
     display: block;
@@ -148,13 +179,15 @@ img {
     height: 100%;
     color: #fff;
   }
-  .searchbox li a span.glyphicon {
-    display: block!important;
+  .searchbox li a span.glyphicon {   
+    top: 0; 
     font-size: 16px;
     color: #fff;
     background: #72d0f5;
-    padding: 20px 16px;
-    width: 50px;
+    width: 50px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
   }
   .searchbox li .submenu {
     background: #ade1f9;
