@@ -1,0 +1,16 @@
+.red{color:#ff0000;}
+.t-right{text-align: right !important;}
+.margin-bottom-1{margin-bottom:10px !important;}
+.html-content-wrapper ol{padding-left:20px;}
+.html-content-wrapper ol > li{list-style: decimal outside none; padding:0;}
+
+.html-content-wrapper ul{padding-left:20px;margin:0;}
+.html-content-wrapper ul > li{list-style: disc outside none;padding: 0;}
+
+.html-content-wrapper h3{font-weight: bold;margin-top:10px; margin-bottom: 5px;font-size:15px;}
+.html-content-wrapper p{line-height: 20px; font-size:15px;}
+
+
+html body .searchbox li .submenu input[type=text]{border: 2px solid #837f75; height: 40px; width: 100%;}
+html body .searchbox li .submenu input[type=submit]{display: block; padding: 0 10px; width: 255px; text-decoration: none; color: #fff;  font-family: 'helvetica_neuecondensed_bold'; margin: 10px auto; float: none; font-size: 16px; background: #333; text-align:center; height: 33px; line-height: 33px; border: none}
+.clearer:after{ display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }

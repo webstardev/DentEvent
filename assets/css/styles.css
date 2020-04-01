@@ -113,25 +113,24 @@ img {
   padding: 25px 10px;
 }
 
-.searchbox li .submenu input[type=submit] {
-  display: block;
-  padding: 0 10px;
-  width: 255px;
-  text-decoration: none;
-  color: #fff;
-  font-family: 'helvetica_neuecondensed_bold';
-  margin: 10px auto;
-  float: none;
-  font-size: 16px;
-  background: #333;
-  text-align: center;
-  height: 33px;
-  line-height: 33px;
-  border: none;
-}
-
 .searchbox li a.active span.glyphicon {
   background: #808080;
+}
+
+.searchform form {
+  margin: 0;
+}
+
+.searchform input[type="text"] {
+  padding: 5px 1%;
+  float: left;
+  border: 1px solid #8f8f8e;
+  width: 81%;
+  height: 43px;
+  color: #333;
+  font-size: 17px;
+  font-weight: normal;
+  font-family: 'helvetica-italic';
 }
 
 @media (max-width: 767px) {
