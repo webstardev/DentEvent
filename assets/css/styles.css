@@ -220,7 +220,6 @@ img {
 /* nav styles start */
 nav.menu {
   background: #6d6f71;
-  float: left;
   width: 100%;
   font-size: 15px;
   font-family: 'helveticaneue-medium';
@@ -244,4 +243,50 @@ nav.menu li a {
 nav.menu li:last-child {
   padding-right: 0;
 }
-/* nav styled end */
+/* nav styles end */
+
+/* social bar styles started */
+#social-bar {
+  background: #00aced;
+  font-family: 'helveticaneue-medium';
+  font-size:15px;
+  color: white;  
+}
+
+#social-bar .container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+#social-bar .description {
+  display: flex;
+  align-items: center;
+}
+
+#social-bar .social-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+#social-bar .btn-social {
+  display: flex;
+  color: #00aced;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: white;
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* social bar styled ended */
+
+/* video section start*/
+#latest-video-slider li {
+  text-align: center;
+}
+/* video section end */
