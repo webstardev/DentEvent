@@ -8,9 +8,9 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/flexslider/flexslider.css">
-
+  <link rel="stylesheet" href="./assets/bootstrap-datepicker/css/bootstrap-datetimepicker.min.css">
   <link rel="stylesheet" href="./assets/css/fonts.css">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/reset.css">
@@ -172,9 +172,44 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
+    </div>    
+  </section>
 
+  <section id="search-dentevent-tv">
+    <div class="container">
+      <p class="content-title">Search Dentevents. TV...</p>          
+      <form>
+        <div class="event-container">
+          <div class="row">        
+            <div class="col-md-4 col-xs-12">
+              <div class="form-group">
+                <label>Commencing from:</label>
+                <div class='input-group date' id='event-datepicker'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>  
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="form-group">
+                <label for="event-audience">Event Audience:</label>
+                <input type="text" class="form-control" id="event-audience">
+              </div>          
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="form-group">
+                <label for="event-topic">Event Topic:</label>
+                <input type="text" class="form-control" id="event-topic">
+              </div>          
+            </div>
+          </div>
+          <div class="search-btn-div">
+            <button class="btn-event-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </form>
     </div>
   </section>
 
@@ -219,9 +254,58 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="./assets/flexslider/jquery.flexslider-min.js"></script>
-
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/moment.min.js"></script>
+  <script src="./assets/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+  
   <script>
+    var count1 = 1;
+    var count2 = 1;
+    $( document ).ready(function() {
+      $(".submenu").hide();
+        if ($(document).width() < 768) {
+        $(".searchbox li a.search").click(function() {
+          if ($(document).width() < 768) {
+              $(".searchbox li a.menus").next(".submenu").hide();
+              $(this).next(".submenu").slideDown();
+              $(".searchbox li a").removeClass('active');
+              $(this).addClass('active');
+              count2 = 1;
+              if(count1 == 2){
+                  $(this).next(".submenu").hide();
+                  $(".searchbox li a").removeClass('active');
+                  count1 = 0;
+              }
+              count1++;
+          }
+        });
+        $(".searchbox li a.menus").click(function() {
+          if ($(document).width() < 768) {
+              $(".searchbox li a.search").next(".submenu").hide();
+              $(this).next(".submenu").slideDown();
+              $(".searchbox li a").removeClass('active');
+              $(this).addClass('active');
+              count1 = 1;
+              if(count2 == 2){
+                  $(this).next(".submenu").hide();
+                  $(".searchbox li a").removeClass('active');
+                  count2 = 0;
+              }
+              count2++;
+          }
+        });
+        }else{
+          $('.searchbox  div').removeAttr('style');
+          $(".submenu").hide();
+        }
+    });
+
+    $(window).bind('resize', function() {
+        if ($(document).width() >= 768) {
+          $('.searchbox  div').removeAttr('style');
+          $(".submenu").hide();
+        }
+    });
+
     $(window).load(function () {
       $('#latest-video .flexslider').flexslider({
         animation: "slide",
@@ -233,6 +317,13 @@
         maxItems: 1,
       });
     })
+
+    $(document).ready(function(){
+      $("#event-datepicker").datetimepicker({
+        format: 'DD/MM/YYYY'
+      });
+    });
+
   </script>
 </body>
 

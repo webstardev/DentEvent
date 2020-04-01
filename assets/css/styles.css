@@ -284,6 +284,7 @@ nav.menu li:last-child {
 /* video section start*/
 #latest-video {
   position: relative;
+  padding-bottom: 15px;
 }
 
 #latest-video .flexslider {
@@ -314,21 +315,20 @@ nav.menu li:last-child {
 /* upcoming styles start */
 #upcoming-section {
   background: #12171b;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 10px;  
 }
 
 #upcoming-section .content-title {
   font-family: 'helveticaneue-medium';
   color: white;  
+  margin-bottom: 5px;
 }
 
 #upcoming-section .upcoming-card {
   background: white;
   display: flex;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 10px;  
+  margin-bottom: 15px;
 }
 
 #upcoming-section .day-content {
@@ -366,8 +366,53 @@ nav.menu li:last-child {
   font-size: 14px;
   font-style: italic;
 }
-
 /* upcoming styles end */
+
+/* search dentevents tv style start */
+#search-dentevent-tv {
+  background: #12171b;  
+  padding-bottom: 15px;
+}
+
+#search-dentevent-tv .content-title {
+  font-family: 'helveticaneue-medium';
+  color: white;  
+  margin-bottom: 5px;
+}
+
+#search-dentevent-tv .event-container{
+  background: #6c6f73;
+  padding: 10px 10px 0 10px;
+  display: flex;
+}
+
+#search-dentevent-tv label {
+  color: white;
+}
+#search-dentevent-tv .event-container .row {
+  flex: 1 1 100%;
+}
+#search-dentevent-tv .event-container .search-btn-div {
+  flex: 1 1 50px;  
+  padding-left: 10px;
+  padding-top: 19px;
+}
+
+#search-dentevent-tv .event-container .search-btn-div .btn-event-search{
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 25px;
+  background: white;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* search detnevents tv stle end */
 
 /* footer styles start */
 #footer {
