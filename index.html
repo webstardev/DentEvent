@@ -29,10 +29,9 @@
         </div>
         <div class="header-right col-lg-9 col-sm-8 col-xs-4">
           <div class="add-box desktop1">
-            <a href="https://www.idem-singapore.com/registration-travel/registrationpricing"
-              target="_blank" data="4c79c1a2-6287-11ea-92b8-34ac530e0099">
-              <img
-                src="https://crm.dentist.com.au/upload/c84fb890-6fed-11ea-ac9a-a3d811797776" alt="IDEM 2020 - LB"
+            <a href="https://www.idem-singapore.com/registration-travel/registrationpricing" target="_blank"
+              data="4c79c1a2-6287-11ea-92b8-34ac530e0099">
+              <img src="https://crm.dentist.com.au/upload/c84fb890-6fed-11ea-ac9a-a3d811797776" alt="IDEM 2020 - LB"
                 title="IDEM 2020 - LB"></a>
           </div>
           <div class="searchbox pull-right postatic mobile1">
@@ -86,7 +85,7 @@
         <li><a href="https://www.dentevents.com/advertise">Advertise</a></li>
         <li><a href="https://www.dentevents.com/contact-us">Contact Us</a></li>
       </ul>
-    </section>            
+    </section>
   </nav>
 
   <section id="social-bar">
@@ -111,21 +110,59 @@
       </div>
     </div>
   </section>
-  
+
   <section id="latest-video">
     <div class="container">
       <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="./assets/images/slider-3.jpg" alt="Slider-3"/>
-          </li>
-          <li>
-            <img src="./assets/images/slider-4.jpg" alt="Slider-4"/>
-          </li>
-        </ul>
+          <ul class="slides">
+              <li>
+                  <img src="./assets/images/slider-3.jpg" alt="Slider-3" />
+                </li>
+              <li>
+                  <img src="./assets/images/slider-4.jpg" alt="Slider-4" />
+                </li>
+            </ul>
       </div>
     </div>
   </section>
+
+  <footer id="footer">
+    <section class="container">
+      <div class="col-sm-12">
+        <div class="row">
+
+          <div class="footer-link clearfix">
+            <ul class="desktop">
+              <li>
+                <a href="https://www.dentevents.com/about-us">About</a>
+              </li>
+              <li>
+                <a href="https://www.dentevents.com/useful-links">Links</a>
+              </li>
+              <li>
+                <a href="https://www.dentevents.com/contact-us">Contact Us</a>
+              </li>
+              <li>
+                <a href="https://www.dentevents.com/advertise">Advertise</a>
+              </li>
+              <li>
+                <a href="#">Site Map</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="copyright">
+              Copyright ©
+              <script type="text/JavaScript">
+                document.write(new Date().getFullYear());
+              </script>
+              2020 Main Street Publishing Pty Ltd.<br> All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -133,13 +170,16 @@
 
   <script src="./assets/js/script.js"></script>
   <script>
-    $(window).load(function() {
-      $('#latest-video .flexslider').flexslider({
-        animation: "slide",
-        animationLoop: true,
-        minItems: 1,
-        maxItems: 1
-      });
+    $(window).load(function () {
+      $('#latest-video .flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        mousewheel: true,
+        slideshow: true,
+        slideshowSpeed: 3000,
+        minItems: 1,
+        maxItems: 1,
+      });
     })
   </script>
 </body>
