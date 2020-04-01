@@ -1,5 +1,6 @@
 body {
-  background: #ebebeb;
+  /* background: #ebebeb; */
+  background: #12171b; 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #231f20;
   font-size: 15px;
@@ -30,6 +31,51 @@ img {
 
 .desktop1 {
   display: block;
+}
+
+.dent-slider.flexslider {
+  border-radius: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+
+.dent-slider.flexslider .flex-prev,
+.dent-slider.flexslider .flex-next {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.flexslider-section {
+  padding: 10px 0;
+}
+
+.dent-slider .flex-caption {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.dent-slider .flex-description {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 11px;
+  line-height: 10px;
+}
+  
+.content-title {
+  font-family: 'helveticaneue-medium';
+  color: white;  
+  margin-bottom: 5px;
 }
 
 @media (max-width: 767px) {
@@ -289,17 +335,8 @@ nav.menu li:last-child {
 
 #latest-video .flexslider {
   margin: 0;  
-  border: 0;
-  border-radius: 0;
+  border: 0;  
   background: transparent;
-}
-
-#latest-video .flexslider .flex-prev,
-#latest-video .flexslider .flex-next {
-  font-size: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #latest-video .flexslider .slides img {
@@ -310,18 +347,15 @@ nav.menu li:last-child {
 #latest-video .flexslider .flex-control-nav {
   bottom: 5px;
 }
+
+#latest-video .flexslider .flex-direction-nav a:before {
+  color: rgba(255, 255, 255, 0.8);
+}
 /* video section end */
 
 /* upcoming styles start */
 #upcoming-section {
-  background: #12171b;
   padding-top: 10px;  
-}
-
-#upcoming-section .content-title {
-  font-family: 'helveticaneue-medium';
-  color: white;  
-  margin-bottom: 5px;
 }
 
 #upcoming-section .upcoming-card {
@@ -370,14 +404,7 @@ nav.menu li:last-child {
 
 /* search dentevents tv style start */
 #search-dentevent-tv {
-  background: #12171b;  
   padding-bottom: 15px;
-}
-
-#search-dentevent-tv .content-title {
-  font-family: 'helveticaneue-medium';
-  color: white;  
-  margin-bottom: 5px;
 }
 
 #search-dentevent-tv .event-container{
@@ -414,11 +441,16 @@ nav.menu li:last-child {
 }
 /* search detnevents tv stle end */
 
+/* dent-carousel-slider start */
+.dent-carousel-slider {
+
+}
+/* dent-carousel-slider end */
+
 /* footer styles start */
 #footer {
   width: 100%;
-  float: left;
-  border-top: 22px solid #d1d3d5;
+  float: left;  
   background: #008ec7;
   padding-bottom: 20px;
 }
