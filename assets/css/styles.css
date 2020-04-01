@@ -216,3 +216,32 @@ img {
     font-family: 'helvetica_ce_roman_regular';
   }
 }
+
+/* nav styles start */
+nav.menu {
+  background: #6d6f71;
+  float: left;
+  width: 100%;
+  font-size: 15px;
+  font-family: 'helveticaneue-medium';
+  padding: 3px 0;
+}
+
+nav.menu ul {
+  float: right;
+}
+
+nav.menu li {
+  float: left;
+  padding: 0 27px;
+}
+
+nav.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav.menu li:last-child {
+  padding-right: 0;
+}
+/* nav styled end */
