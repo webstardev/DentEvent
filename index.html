@@ -112,6 +112,20 @@
     </div>
   </section>
   
+  <section id="latest-video">
+    <div class="container">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="./assets/images/slider-3.jpg" alt="Slider-3"/>
+          </li>
+          <li>
+            <img src="./assets/images/slider-4.jpg" alt="Slider-4"/>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -120,12 +134,13 @@
   <script src="./assets/js/script.js"></script>
   <script>
     $(window).load(function() {
-      $('#latest-video-slider').flexslider({
+      $('#latest-video .flexslider').flexslider({
         animation: "slide",
         animationLoop: true,
-        controlNav: true,
+        minItems: 1,
+        maxItems: 1
       });
-    });
+    })
   </script>
 </body>
 

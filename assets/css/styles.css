@@ -7,10 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  outline: none;
-}
-
 input, textarea {
   border: 0;
   border-radius: 0;
@@ -286,7 +282,27 @@ nav.menu li:last-child {
 /* social bar styled ended */
 
 /* video section start*/
-#latest-video-slider li {
-  text-align: center;
+#latest-video {
+  position: relative;
+}
+
+#latest-video .flexslider {
+  margin: 0;  
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+#latest-video .flexslider .flex-prev,
+#latest-video .flexslider .flex-next {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#latest-video .flexslider .slides img {
+  margin: 0 auto;
+  max-width: 640px;
 }
 /* video section end */
