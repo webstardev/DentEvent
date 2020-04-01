@@ -307,9 +307,67 @@ nav.menu li:last-child {
 }
 
 #latest-video .flexslider .flex-control-nav {
-  bottom: 0;
+  bottom: 5px;
 }
 /* video section end */
+
+/* upcoming styles start */
+#upcoming-section {
+  background: #12171b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#upcoming-section .content-title {
+  font-family: 'helveticaneue-medium';
+  color: white;  
+}
+
+#upcoming-section .upcoming-card {
+  background: white;
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#upcoming-section .day-content {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#upcoming-section .day-content .day-description {
+  display: flex;
+  justify-content: center;  
+  color: red;
+  font-size: 14px;
+}
+
+#upcoming-section .day-content .day-number {
+  display: flex;
+  justify-content: center;  
+  font-size: 30px;
+}
+
+#upcoming-section .upcoming-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#upcoming-section .content .title {
+  font-size: 17px;
+  line-height: 1.5;  
+}
+
+#upcoming-section .content .description {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* upcoming styles end */
 
 /* footer styles start */
 #footer {
