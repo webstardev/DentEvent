@@ -453,6 +453,17 @@ nav.menu li:last-child {
   color: white;
 }
 
+#upcoming-section .dropup .dropdown-menu {
+  right: -32px;
+  left: auto;
+  text-align: center;
+}
+
+#upcoming-section .dropdown-menu>li>a:focus, 
+#upcoming-section .dropdown-menu>li>a:hover {
+  background-color: #ed2027;
+  color: white;
+}
 /* upcoming styles end */
 
 /* search dentevents tv style start */
