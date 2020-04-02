@@ -117,9 +117,11 @@
         <ul class="slides">
           <li>
             <img src="./assets/images/slider-3.jpg" alt="Slider-3" />
+            <a class="btn-play-video" href="" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
           </li>
           <li>
             <img src="./assets/images/slider-4.jpg" alt="Slider-4" />
+            <a class="btn-play-video" href="" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
@@ -132,7 +134,7 @@
         <div class="col-md-12">
           <p class="content-title">Upcoming LIVE STREAMING Events...</p>
         </div>
-        <div class="col-md-4 col-xs-12">
+        <div class="col-md-4 col-xs-12">          
           <div class="upcoming-card">
             <div class="day-content">
               <p class="day-description">Saturday</p>
@@ -143,6 +145,15 @@
               <h6 class="title">Implant Management and Periocare Maintenance</h6>
               <p class="description">With Dr David Rosstar</p>
             </div>
+          </div>
+          <div class="bottom-info">
+            <p>Sydney AUSTRALIA|Ivoclar Vivadent Pty Ltd</p>            
+            <a class="btn-fa">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </a>
+            <a class="btn-fa">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
         <div class="col-md-4 col-xs-12">
@@ -181,7 +192,7 @@
       <form>
         <div class="event-container">
           <div class="row">        
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6">
               <div class="form-group">
                 <label>Commencing from:</label>
                 <div class='input-group date' id='event-datepicker'>
@@ -192,13 +203,19 @@
                 </div>  
               </div>
             </div>
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="form-group">
+                <label for="event-topic">Location:</label>
+                <input type="text" class="form-control" id="event-topic">
+              </div>          
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
               <div class="form-group">
                 <label for="event-audience">Event Audience:</label>
                 <input type="text" class="form-control" id="event-audience">
               </div>          
             </div>
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6">
               <div class="form-group">
                 <label for="event-topic">Event Topic:</label>
                 <input type="text" class="form-control" id="event-topic">
@@ -424,6 +441,106 @@
     </div>
   </section>
 
+  <section id="featured-speaker-section" class="flexslider-section">
+    <div class="container">
+      <p class="content-title">Featured Speakers...</p>
+      <div class="flexslider dent-slider dent-carousel-slider">
+        <ul class="slides">
+          <li>
+            <img src="./assets/images/person1.jpg" alt="slider1">
+            <p class="flex-caption">Person1</p>
+          </li>
+          <li>
+            <img src="./assets/images/person2.jpg" alt="slider2">
+            <p class="flex-caption">Person2</p>
+          </li>
+          <li>
+            <img src="./assets/images/person3.jpg" alt="slider3">
+            <p class="flex-caption">Person3</p>
+          </li>
+          <li>
+            <img src="./assets/images/person4.jpg" alt="slider4">
+            <p class="flex-caption">Person4</p>
+          </li>
+          <li>
+            <img src="./assets/images/person5.jpg" alt="slider4">
+            <p class="flex-caption">Person5</p>
+          </li>
+          <li>
+            <img src="./assets/images/person6.jpg" alt="slider4">
+            <p class="flex-caption">Person6</p>
+          </li>
+          <li>
+            <img src="./assets/images/person2.jpg" alt="slider4">
+            <p class="flex-caption">Person7</p>
+          </li>
+          <li>
+            <img src="./assets/images/person4.jpg" alt="slider4">
+            <p class="flex-caption">Person8</p>
+          </li>
+          <li>
+            <img src="./assets/images/person5.jpg" alt="slider4">
+            <p class="flex-caption">Person9</p>
+          </li>
+          <li>
+            <img src="./assets/images/person1.jpg" alt="slider4">
+            <p class="flex-caption">Person10</p>
+          </li>
+          <li>
+            <img src="./assets/images/person6.jpg" alt="slider4">
+            <p class="flex-caption">Person11</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="genres-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="content-title">Genres...</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 genres-card">
+          <a href="#">
+            <img src="./assets/images/comedy-back.jpg">
+            <p class="description">Comedy</p>
+          </a>                    
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 genres-card">
+          <a href="#">
+            <img src="./assets/images/document-back.jpg">
+            <p class="description">Documentary & Special Interest</p>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 genres-card">
+          <a href="#">
+            <img src="./assets/images/drama-back.jpg">
+            <p class="description">Drama</p>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 genres-card">
+          <a href="#">
+            <img src="./assets/images/lifestyle-back.jpg">
+            <p class="description">LifeStyle</p>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 genres-card">
+          <a href="#">
+            <img src="./assets/images/news-back.jpg">
+            <p class="description">News & Current Affairs</p>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 genres-card">
+          <a href="#">
+            <img src="./assets/images/reality-back.jpg">
+            <p class="description">Reality</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer id="footer">
     <section class="container">
       <div class="col-sm-12">
@@ -584,6 +701,18 @@
         slideshowSpeed: 3000,
         minItems: 1,      
         itemWidth: 240,  
+        itemMargin: 3,
+        controlNav: false
+      });      
+
+      $('#featured-speaker-section .flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        mousewheel: true,
+        slideshow: true,
+        slideshowSpeed: 3000,
+        minItems: 1,      
+        itemWidth: 100,  
         itemMargin: 3,
         controlNav: false
       });      
