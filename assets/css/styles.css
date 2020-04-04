@@ -338,8 +338,7 @@ nav.menu li:last-child {
 
 /* video section start*/
 #latest-video {
-  position: relative;
-  padding-bottom: 15px;
+  position: relative;  
 }
 
 #latest-video .flexslider {
@@ -354,7 +353,7 @@ nav.menu li:last-child {
 }
 
 #latest-video .flexslider .flex-control-nav {
-  bottom: 5px;
+  bottom: 35px;
 }
 
 #latest-video .flexslider .flex-direction-nav a:before {
@@ -367,6 +366,14 @@ nav.menu li:last-child {
 
 #latest-video .flexslider .btn-play-video {
   font-size: 175px;
+}
+
+#latest-video .flexslider .flex-control-paging li a {
+  background: #978d8b;
+}
+
+#latest-video .flexslider .flex-control-paging li a.flex-active{
+  background: white;   
 }
 /* video section end */
 
