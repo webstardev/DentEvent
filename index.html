@@ -139,6 +139,58 @@
     </div>
   </section>
 
+  <section id="live-in-news" class="mobile1">
+    <div class="container">
+      <p class="content-title">Live in NSW</p>
+      <div class="flexslider dent-slider">
+        <ul class="slides">
+          <li>
+            <div class="slider-item">
+              <div class="first-div">
+                <img src="./assets/images/live-news-logo.png" alt="Slider-3" />
+              </div>
+              <div class="second-div">
+                <p class="title">A Current Affair</p>
+                <p class="time">7:00pm - 8:00pm</p>
+              </div>
+              <div class="third-div">
+                <a class="btn-play-video" href="" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+              </div>              
+            </div>
+          </li>
+          <li>
+            <div class="slider-item">
+              <div class="first-div">
+                <img src="./assets/images/live-news-logo.png" alt="Slider-3" />
+              </div>
+              <div class="second-div">
+                <p class="title">A Current Affair</p>
+                <p class="time">7:00pm - 8:00pm</p>
+              </div>
+              <div class="third-div">
+                <a class="btn-play-video" href="" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+              </div>              
+            </div>
+          </li>
+          <li>
+            <div class="slider-item">
+              <div class="first-div">
+                <img src="./assets/images/live-news-logo.png" alt="Slider-3" />
+              </div>
+              <div class="second-div">
+                <p class="title">A Current Affair</p>
+                <p class="time">7:00pm - 8:00pm</p>
+              </div>
+              <div class="third-div">
+                <a class="btn-play-video" href="" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+              </div>              
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="upcoming-section">
     <div class="container">
       <div class="row upcoming-container">
@@ -765,6 +817,19 @@
         itemWidth: 100,  
         itemMargin: 3,
         controlNav: false
+      });
+
+      $('#live-in-news .flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        mousewheel: true,
+        slideshow: true,
+        slideshowSpeed: 3000,
+        minItems: 1,      
+        itemWidth: 300,  
+        itemMargin: 3,
+        controlNav: false,
+        itemMargin: 10,
       });      
             
     })

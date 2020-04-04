@@ -498,6 +498,63 @@ nav.menu li:last-child {
 }
 /* upcoming styles end */
 
+/* live-in-news styles start */
+#live-in-news .slider-item {
+  display: flex;  
+  background: #22272a;
+  padding: 10px;
+}
+
+#live-in-news .slider-item .first-div {
+  display: flex;
+  flex: 1 1 90px;
+  padding-right: 10px;
+  align-items: center;  
+  min-width: 90px;
+}
+
+#live-in-news .slider-item .second-div {
+  flex: 1 1 155px;
+  max-width: 155px;
+}
+
+#live-in-news .slider-item .second-div .title {
+  color: white;
+  font-size: 1.3em;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#live-in-news .slider-item .second-div .time {
+  font-size: 1.3em;
+  color: #8e9396;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#live-in-news .slider-item .third-div {
+  flex: 1 1 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#live-in-news .slider-item .third-div .btn-play-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(0,0);
+  font-size: 40px;
+}
+
+#live-in-news .flexslider .flex-direction-nav a:before {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* live-in-news styled end */
+
 /* search dentevents tv style start */
 #search-dentevent-tv {
   padding-bottom: 15px;
