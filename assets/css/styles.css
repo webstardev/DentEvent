@@ -89,7 +89,7 @@ img {
 
 .header {
   background: #00aced;
-  padding: 12px 0;
+  padding: 12px 0 0 0;
   min-height: 72px;
   position: relative;
   z-index: 99999;
@@ -151,13 +151,13 @@ img {
 }
 
 .submenu .searchform {
-  background: rgba(255, 255, 255, 0.7);
+  background-image: linear-gradient(to right, #0c3c56, #05679c ,#0c3c56);
   padding: 25px 10px;
 }
 
-.searchbox li a.active span.glyphicon {
+/* .searchbox li a.active span.glyphicon {
   background: #808080;
-}
+} */
 
 .searchform form {
   margin: 0;
@@ -188,11 +188,18 @@ img {
   .header {
     padding-top: 0;
     padding-bottom: 0;
+    background-image: linear-gradient(to right, #0c3c56, #05679c ,#0c3c56);
   }
 
-  .header .logo {  
+  .header .logo {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .header .logo a {
+    display: flex;
+    margin: 0 auto;
+    max-width: 80%;
   }
 
   .header .header-right {
@@ -202,23 +209,21 @@ img {
 
   .searchbox {
     display: block;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    width: 100%;
+    position: static;    
   }  
   .searchbox ul {
     height: 100%;
-    float: right;
     overflow: hidden;
   }
+
+  .searchbox ul.search-ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .searchbox li {
     height: 100%;
-    float: left;
     padding: 0;
-  }
-  .searchbox li.link {
-    margin-right: 1px;
   }
   .searchbox li.link a {
     display: block;
@@ -233,16 +238,15 @@ img {
     top: 0; 
     font-size: 16px;
     color: #fff;
-    background: #72d0f5;
+    background: transparent;
     width: 50px;    
     display: flex;
     align-items: center;
     justify-content: center;    
   }
   .searchbox li .submenu {
-    background: #ade1f9;
+    background-image: linear-gradient(to right, #0c3c56, #05679c ,#0c3c56);
     width: 100%;
-    border-top: 10px solid #808080;
     position: absolute;  
     left: 0px;
   }
@@ -253,17 +257,16 @@ img {
   .searchbox li .submenu li {
     width: 100%;
     height: 100%;
-    float: left;
+    text-align: center;
     line-height: 30px;
-    padding: 0 5%;
-    border-bottom: 1px solid #fff;
+    padding: 0 5%;    
   }
   .searchbox li .submenu li a {
     display: block;
     font-size: 16px;
     line-height: 30px;
     height: auto;
-    color: #3a3a3a;
+    color: white;
     font-family: 'helvetica_ce_roman_regular';
   }
 }
@@ -298,10 +301,10 @@ nav.menu li:last-child {
 
 /* social bar styles started */
 #social-bar {
-  background: #00aced;
   font-family: 'helveticaneue-medium';
   font-size:15px;
   color: white;  
+  margin-top: 12px;
 }
 
 #social-bar .container {
@@ -334,6 +337,18 @@ nav.menu li:last-child {
   cursor: pointer;
   text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+  #social-bar .container {
+    flex-direction: column;
+  }
+
+  #social-bar .social-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+#social-bar 
 /* social bar styled ended */
 
 /* video section start*/
@@ -374,6 +389,12 @@ nav.menu li:last-child {
 
 #latest-video .flexslider .flex-control-paging li a.flex-active{
   background: white;   
+}
+
+@media screen and (max-width: 767px) {
+  #latest-video .btn-play-video {
+    display: none;
+  }
 }
 /* video section end */
 
@@ -470,6 +491,10 @@ nav.menu li:last-child {
 #upcoming-section .dropdown-menu>li>a:hover {
   background-color: #ed2027;
   color: white;
+}
+
+#upcoming-section .dropup {
+  margin-left: auto;
 }
 /* upcoming styles end */
 
