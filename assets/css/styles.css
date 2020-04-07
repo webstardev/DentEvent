@@ -13,7 +13,6 @@ input, textarea {
   border-radius: 0;
   margin: 0;
   padding: 0;
-  appearance: none;
 }
 
 input, select, a img {
@@ -92,7 +91,7 @@ img {
   padding: 12px 0 0 0;
   min-height: 72px;
   position: relative;
-  z-index: 99999;
+  z-index: 1;
 }
 
 .postatic {
@@ -725,3 +724,145 @@ nav.menu li:last-child {
   display: block;
 }
 /* footer styled end */
+
+/* modal styles start*/
+.dent-modal .modal-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 420px;
+}
+
+.dent-modal .modal-header {
+  border: none;
+  padding: 55px 40px 0 40px;
+}
+
+.dent-modal .modal-content .modal-title {
+  font-size: 2em;
+  color: white;
+  float: left;
+}
+
+.dent-modal .modal-content .close {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 35px;
+  opacity: .8;
+}
+
+.dent-modal .modal-body {
+  padding: 20px 40px 40px;
+}
+
+.dent-modal .btn-sign {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.dent-modal input {
+  background: #333333;
+  border-color: #333333;
+  color: #888a8c;
+}
+
+#signin-modal .sign-description {
+  margin-top: 45px;
+  display: flex;
+  color: #888a8c;
+  font-weight: bold;
+}
+
+#signin-modal .sign-description a {
+  text-decoration: none !important;  
+  font-size: 1em;
+  color: white;
+}
+
+#signin-modal .learn-more {
+  color: #888a8c;
+  font-size: 0.8em;
+  line-height: 1.2;
+  margin-top: 12px;
+}
+
+#signin-modal .learn-more a {
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+#signin-modal .form-check-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+#signin-modal .form-check {  
+  color: #888a8c;  
+}
+
+#signin-modal .form-check-div .need-help {
+  color: #888a8c;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+#signin-modal .form-check input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border-radius: 4px;
+}
+
+#signin-modal .checkbox label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#signin-modal .checkbox .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #888a8c;
+  background-color: #888a8c;
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+  margin-right: .5em;
+}
+
+#signin-modal .checkbox .cr .cr-icon {
+  position: absolute;
+  font-size: 11px;
+  line-height: 0;
+  top: calc(50% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#signin-modal .checkbox label {
+  display: flex;
+  align-items: center;
+  color: #888a8c;
+  padding-left: 0;
+}
+
+#signin-modal .checkbox label input[type="checkbox"] {
+  display: none;
+}
+
+#signin-modal .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+  opacity: 0;
+}
+
+#signin-modal .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+  opacity: 1;
+  color: rgba(0,0,0,0.8);
+}
+
+#signin-modal .checkbox label input[type="checkbox"]:disabled+.cr {
+  opacity: .5;
+}
+/* model styles end */

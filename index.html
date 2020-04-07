@@ -19,6 +19,10 @@
 
 <body>
 
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signin-modal">
+    Sign In Test Button
+  </button>
+  
   <header class="header ">
     <section class="container">
       <div class="row">
@@ -681,6 +685,43 @@
     </section>
   </footer>
 
+  <div id="signin-modal" class="modal dent-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Sign in</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Username" required/>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" required/>
+            </div>
+            <button type="button" class="btn-sign btn btn-danger">Sign in</button>
+            <div class="form-check-div">              
+              <div class="checkbox">
+                <label>
+                 <input type="checkbox" value="" checked>
+                 <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>                 
+                </label>
+              </div>              
+              <a class="need-help" href="#">Need help?</a>
+            </div>            
+            <div class="sign-description">
+              <p>New to Dentevents.tv&nbsp;</p><a href="#">Sign up now.</a>              
+            </div>
+            <p class="learn-more">This page is protected by Google reCAPTCHA to ensure you're not a bot.&nbsp;<a href="#">Learn more</a></p>
+          </form>          
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="./assets/flexslider/jquery.flexslider-min.js"></script>
