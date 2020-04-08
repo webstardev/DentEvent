@@ -154,6 +154,9 @@ img {
   padding: 25px 10px;
 }
 
+.submenu ul li a {
+  cursor: pointer;
+}
 /* .searchbox li a.active span.glyphicon {
   background: #808080;
 } */
@@ -280,17 +283,21 @@ nav.menu {
 }
 
 nav.menu ul {
-  float: right;
+  display: flex;
 }
 
-nav.menu li {
-  float: left;
+nav.menu li {  
   padding: 0 27px;
+}
+
+nav.menu li:first-child {
+  padding-left: 0;
 }
 
 nav.menu li a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 nav.menu li:last-child {
@@ -726,9 +733,14 @@ nav.menu li:last-child {
 /* footer styled end */
 
 /* modal styles start*/
-.dent-modal .modal-content {
-  background-color: rgba(0, 0, 0, 0.7);
+
+.dent-modal .modal-dialog {
   max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dent-modal .modal-content {
+  background-color: rgba(0, 0, 0, 0.7);  
 }
 
 .dent-modal .modal-header {

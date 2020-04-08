@@ -18,10 +18,6 @@
 </head>
 
 <body>
-
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signin-modal">
-    Sign In Test Button
-  </button>
   
   <header class="header ">
     <section class="container">
@@ -46,6 +42,11 @@
               <a href="#" class="menus"><span class="glyphicon glyphicon-align-justify"></span> Find a Dentist</a>
               <div class="submenu" style="display: none;">
                 <ul>
+                  <li>
+                    <a type="button" data-toggle="modal" data-target="#signin-modal">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Sign In
+                    </a>                  
+                  </li>
                   <li>
                     <a href="https://www.dentevents.com/about-us">About Us</a>
                   </li>
@@ -118,7 +119,12 @@
   <nav class="menu desktop1">
     <section class="container">
       <ul>
-        <li><a href="https://www.dentevents.com/about-us">About Us</a></li>
+        <li>
+          <a type="button" data-toggle="modal" data-target="#signin-modal">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Sign In
+          </a>                  
+        </li>
+        <li style="margin-left: auto"><a href="https://www.dentevents.com/about-us">About Us</a></li>
         <li><a href="https://www.dentevents.com/useful-links">Links</a></li>
         <li><a href="https://www.dentevents.com/advertise">Advertise</a></li>
         <li><a href="https://www.dentevents.com/contact-us">Contact Us</a></li>
@@ -702,7 +708,6 @@
             <div class="form-group">
               <input type="password" class="form-control" placeholder="Password" required/>
             </div>
-            <button type="button" class="btn-sign btn btn-danger">Sign in</button>
             <div class="form-check-div">              
               <div class="checkbox">
                 <label>
