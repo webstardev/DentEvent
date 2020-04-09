@@ -88,7 +88,7 @@ img {
 
 .header {
   background: #00aced;
-  padding: 12px 0 0 0;
+  padding: 12px 0;
   min-height: 72px;
   position: relative;
   z-index: 1;
@@ -150,16 +150,12 @@ img {
 }
 
 .submenu .searchform {
-  background-image: linear-gradient(to right, #0c3c56, #05679c ,#0c3c56);
   padding: 25px 10px;
 }
 
 .submenu ul li a {
   cursor: pointer;
 }
-/* .searchbox li a.active span.glyphicon {
-  background: #808080;
-} */
 
 .searchform form {
   margin: 0;
@@ -190,7 +186,6 @@ img {
   .header {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: linear-gradient(to right, #0c3c56, #05679c ,#0c3c56);
   }
 
   .header .logo {
@@ -216,6 +211,7 @@ img {
   .searchbox ul {
     height: 100%;
     overflow: hidden;
+    float: right;
   }
 
   .searchbox ul.search-ul {
@@ -241,16 +237,19 @@ img {
     font-size: 16px;
     color: #fff;
     background: transparent;
-    width: 50px;    
+    width: 50px;  
+    height: 72px;  
     display: flex;
     align-items: center;
     justify-content: center;    
+    background: #72d0f5;
   }
   .searchbox li .submenu {
-    background-image: linear-gradient(to right, #0c3c56, #05679c ,#0c3c56);
+    background: #ade1f9;
     width: 100%;
     position: absolute;  
     left: 0px;
+    border-top: 10px solid #808080;
   }
   .searchbox ul ul {
     float: none;
@@ -262,13 +261,19 @@ img {
     text-align: center;
     line-height: 30px;
     padding: 0 5%;    
+    border-bottom: 1px solid white;
   }
+
+  .searchbox li .submenu li:last-child {
+    border-bottom: none;
+  }
+
   .searchbox li .submenu li a {
     display: block;
     font-size: 16px;
     line-height: 30px;
     height: auto;
-    color: white;
+    color: black;
     font-family: 'helvetica_ce_roman_regular';
   }
 }
@@ -310,7 +315,7 @@ nav.menu li:last-child {
   font-family: 'helveticaneue-medium';
   font-size:15px;
   color: white;  
-  margin-top: 12px;
+  background: #00aced;
 }
 
 #social-bar .container {
