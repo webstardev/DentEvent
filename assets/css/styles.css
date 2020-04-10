@@ -326,7 +326,7 @@ nav.menu li:last-child {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  min-height: 388px;
+  height: 378px
 }
 
 #section-one .search-dent-form {
@@ -387,13 +387,39 @@ nav.menu li:last-child {
     min-height: auto;
   }
 }
+
+@media screen and (max-width: 767px) {
+  #section-one .container {
+    padding-top: 10px;
+  }
+}
 /* section-one styles end */
+
+.view-all-div {
+  display: flex;  
+  width: 100%;    
+}
+
+.view-all-div .item {
+  display: flex;
+  padding: 7px 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 33.33%;
+}
+
+.view-all-div .item a {
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+}
 
 /* footer styles start */
 #footer {
   width: 100%;
   float: left;  
-  background: #008ec7;
+  background: #00aced;
   padding-bottom: 20px;
   margin-top: 22px;
 }
