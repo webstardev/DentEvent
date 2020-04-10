@@ -395,6 +395,10 @@ nav.menu li:last-child {
 }
 /* section-one styles end */
 
+#main-content .container {
+  background-color: white;
+}
+
 /* event logo styles start */
 #event-logo-section {
   display: block;
@@ -493,6 +497,117 @@ nav.menu li:last-child {
   }
 }
 
+/* upcoming section started */
+#upcoming-section {
+  padding-top: 10px;  
+}
+
+#upcoming-section .content-title {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#upcoming-section .upcoming-item-div {
+  background-color: #e6e8e7;
+  box-shadow: 1px 1px 3px #999;
+}
+
+#upcoming-section .upcoming-card {
+  background-color: #e6e8e7;
+  display: flex;  
+}
+
+#upcoming-section .day-content {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px 10px;
+  background-color: white;
+}
+
+#upcoming-section .day-content .day-description {
+  display: flex;
+  justify-content: center;  
+  color: red;
+  font-size: 14px;
+}
+
+#upcoming-section .day-content .day-number {
+  display: flex;
+  justify-content: center;  
+  font-size: 30px;
+}
+
+#upcoming-section .upcoming-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+#upcoming-section .content .title {
+  font-size: 17px;
+  line-height: 1.5;  
+}
+
+#upcoming-section .content .description {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#upcoming-section .bottom-info {
+  margin-bottom: 15px;
+  background: #6c7071;
+  font-size: 12px;
+  display: flex;  
+  align-items: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#upcoming-section .bottom-info .btn-fa {
+  cursor: pointer;
+  text-decoration: none;  
+  font-size: 20px;
+}
+
+#upcoming-section .bottom-info p {
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#upcoming-section .bottom-info .btn-fa:first-child {
+  margin-left: auto;
+}
+
+#upcoming-section .bottom-info .btn-fa:last-child {
+  margin-left: 5px;
+}
+
+#upcoming-section .bottom-info .fa {
+  color: white;
+}
+
+#upcoming-section .dropup .dropdown-menu {
+  right: -32px;
+  left: auto;
+  text-align: center;
+}
+
+#upcoming-section .dropdown-menu>li>a:focus, 
+#upcoming-section .dropdown-menu>li>a:hover {
+  background-color: #ed2027;
+  color: white;
+}
+
+#upcoming-section .dropup {
+  margin-left: auto;
+}
+/* upcoming section ended */
 
 /* footer styles start */
 #footer {
