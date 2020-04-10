@@ -395,6 +395,11 @@ nav.menu li:last-child {
 }
 /* section-one styles end */
 
+#event-logo-section {
+  display: block;
+  margin-top: 10px;
+}
+
 .view-all-div {
   display: flex;  
   width: 100%;    
@@ -402,17 +407,24 @@ nav.menu li:last-child {
 
 .view-all-div .item {
   display: flex;
-  padding: 7px 15px;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  padding: 7px 15px;  
   width: 33.33%;
+}
+
+.view-all-div .item .img-div {
+  width: 100%;
+  height: 150px;  
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .view-all-div .item a {
   text-decoration: none;
   font-size: 1.5em;
   text-align: center;
+  margin-top: 15px;
 }
 
 /* footer styles start */
