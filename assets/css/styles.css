@@ -45,6 +45,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;    
+  opacity: 1;
+
+}
+
+.dent-slider.flexslider .flex-direction-nav .flex-prev {
+  left: 0;
+}
+
+.dent-slider.flexslider .flex-direction-nav .flex-next {
+  right: 0;  
+}
+
+.dent-slider.flexslider .flex-direction-nav a:before {
+  color: rgba(255, 255, 255, 0.8);
+  display: block !important;
 }
 
 .flexslider-section {
@@ -399,15 +414,6 @@ nav.menu .btn-login {
 #latest-video .flexslider .flex-direction-nav a:before {
   color: rgba(255, 255, 255, 0.8);
   display: block !important;
-}
-
-#latest-video .flexslider .flex-direction-nav .flex-prev {
-  left: 0;
-  opacity: 1;
-}
-#latest-video .flexslider .flex-direction-nav .flex-next {
-  right: 0;
-  opacity: 1;
 }
 
 #latest-video .flexslider .slides > li {
